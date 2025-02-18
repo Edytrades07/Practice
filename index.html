@@ -251,7 +251,7 @@
                                         <a class="next-section toLihat" href="javascript:void(0)">
                                             <img class="btn-shape" src="https://static2.tradersfamily.id/wp-content/uploads/2022/10/qna-shape.png" title="" alt="">
                                                 <div class="btn-merge-st">
-                                                    <div class="">
+                                                    <div>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#00B451" class="bi bi-arrow-down" viewBox="0 0 16 16">
                                                             <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"></path>
                                                         </svg>
@@ -265,8 +265,8 @@
                         </div>
                     </div>
                     <div id="next-section" class="x-section nonev-cus-h pb-0" style="margin: 0px;padding: 45px 0px;background-color: transparent;" data-gtm-vis-first-on-screen1912232_180="746" data-gtm-vis-total-visible-time1912232_180="100" data-gtm-vis-has-fired1912232_180="1" data-gtm-vis-first-on-screen1912232_195="749" data-gtm-vis-total-visible-time1912232_195="100" data-gtm-vis-has-fired1912232_195="1">
-                        <div class="x-container max width asda" style="margin: 0px auto;padding: 0px;">
-                            <div class="x-column x-sm x-1-2 asdb" style="padding: 0px;">
+                        <div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+                            <div class="x-column x-sm x-1-2" style="padding: 0px;">
                                 <img class="x-img nonev-img-text x-img-none" src="https://static2.tradersfamily.id/wp-content/uploads/2022/10/qna-now-never.png" title="" alt="">
                             </div>
                             <div class="x-column x-sm x-1-2" style="padding: 0px;">
@@ -717,6 +717,45 @@
         <div class="x-container max width">
           <div class="su-row">
             <div class="x-column x-sm x-3-5 colMoreSpace">
+                <div class="foot-menu show-mobile">
+                    <ul id="menu-menu-footer-v2" class="x-nav">
+                        <li id="menu-item-66998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66998">
+                            <a href="/tentang-kami/">Tentang Kami</a>
+                        </li>
+                        <li id="menu-item-67001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67001">
+                            <a href="/hall-of-fame-tf/">Galeri</a>
+                        </li>
+                        <li id="menu-item-67002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67002">
+                            <a href="/artikel/">Artikel</a>
+                        </li>
+                        <li id="menu-item-67003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67003">
+                            <a href="/news-events-forex/">News &amp; Event</a>
+                        </li>
+                        <li id="menu-item-67005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67005">
+                            <a href="/contact/">Hubungi Kami</a>
+                        </li>
+                        <li id="menu-item-67007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67007">
+                            <a href="/panduan-pembukaan-akun-tf/">Panduan</a>
+                        </li>
+                        <li id="menu-item-67008" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67008">
+                            <a href="/career-tf">Karir</a>
+                        </li>
+                    </ul>
+                    <ul id="menu-services" class="x-nav">
+                        <li id="menu-item-75932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75932">
+                            <a href="/our-service/client-protection">Client Protection</a>
+                        </li>
+                        <li id="menu-item-66994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66994">
+                            <a href="/tf-reward-top-analyst/">TF Top Analyst</a>
+                        </li>
+                        <li id="menu-item-66995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66995">
+                            <a href="/our-service/pro-trader-5-miliar/">Pro Trader</a>
+                        </li>
+                        <li id="menu-item-66996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66996">
+                            <a href="/our-service/analisa-market/">Analisa Market</a
+                        ></li>
+                    </ul>                      
+                </div>
                 <div class="x-colophon-content">
                     <div class="x-social-global x-social-global-img">
                         <a href="https://www.youtube.com/tradersfamily/" target="_blank"><img src="https://tradersfamily.id/wp-content/uploads/2023/03/yt.png" alt=""></a>
@@ -908,7 +947,7 @@
             });
         });
 
-        var countDownDate = new Date("Feb 14, 2025 19:00:00").getTime();
+        var countDownDate = new Date("Feb 17, 2025 19:00:00").getTime();
         setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownDate - now;
@@ -938,7 +977,7 @@
             }
         }, 1000);
         
-        var countDownJkt = new Date("Feb 14, 2025 22:00:00").getTime();
+        var countDownJkt = new Date("Feb 17, 2025 22:00:00").getTime();
         setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownJkt - now;
@@ -957,6 +996,30 @@
                 document.querySelector(".minutes-jakarta").innerHTML = '00';
             }
         }, 1000);
+
+        document.querySelectorAll('.toLihat').forEach(hit => {
+            hit.addEventListener('click', function() {
+                const nextSection = document.querySelector("#next-section");
+                if (nextSection) {
+                    window.scrollTo({
+                        top: nextSection.offsetTop - 80,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+        document.querySelectorAll('.toDaftar').forEach(hit => {
+            hit.addEventListener('click', function() {
+                const nextSection = document.querySelector("#daftarqna");
+                if (nextSection) {
+                    window.scrollTo({
+                        top: nextSection.offsetTop - 80,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
       </script>
 </body>
 </html>
